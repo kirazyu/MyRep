@@ -1,4 +1,3 @@
-//ROUND TO 4 DECIMAL POINTS
 //USE JAVADOC
 
 package ru.domashka.calculator;
@@ -14,7 +13,7 @@ public class Calculus {
     public char operator;
     public double endResult;
 
-    //Creating an actual calculator
+    //Creating a calculator
 
     public Calculus (){
 
@@ -33,7 +32,7 @@ public class Calculus {
         secondNumber = input.nextDouble();
 
     }
-// Setting an operator:
+// Setting an operator & numbers:
 
     public double getFirstNumber(){
         return this.firstNumber;
