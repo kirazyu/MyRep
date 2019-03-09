@@ -14,7 +14,7 @@ public class MilkChocolate extends Sweets {
     }
 
     public String toString() {
-        return super.toString() + "\nMilk type:" + milkType;
+        return super.toString() + "\nMilk type:" + milkType + "\n";
     }
 
 }
