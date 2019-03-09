@@ -11,6 +11,6 @@ public class Toffee extends Sweets {
     }
 
     public String toString() {
-        return super.toString() + "\nTexture:" + texture;
+        return super.toString() + "\nTexture:" + texture + "\n";
     }
 }
