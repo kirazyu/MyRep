@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public interface Box {
 
-// чому не работает
-//  Sweets get(int index);
+
+    Sweets specificInfo(int index);
     void gatherCandy(Sweets sweets);
     void information ();
     double totalPrice ();
