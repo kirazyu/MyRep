@@ -12,7 +12,7 @@ public class JellyBeans extends Sweets {
     }
 
     public String toString() {
-        return super.toString() + "\nFlavour:" + flavour;
+        return super.toString() + "\nFlavour:" + flavour + "\n";
     }
 
 }
