@@ -6,7 +6,13 @@ public class BoxOfCandy implements Box {
 
     private Sweets candy[];
 
+    
+    
 
+    /**
+    *Puts every initialised piece of candy into
+    *the array
+    */
     @Override
     public void gatherCandy(Sweets sweets) {
         if (candy == null){
@@ -17,12 +23,20 @@ public class BoxOfCandy implements Box {
     }
     
 
-      @Override
+    /**
+    *Returns specific info about given 
+    *candy index from the array
+    */
+    @Override
     public Sweets specificInfo(int i) {
         System.out.println("Element found by index " + i + " is: " + candy[i]);
         return candy[i];
     }
 
+    /**
+    *Returns total weigth of 
+    *the present box
+    */
     @Override
     public double totalWeight(){
         double weight = 0.0;
@@ -34,6 +48,9 @@ public class BoxOfCandy implements Box {
         return weight;
  }
 
+    /**
+    *Returns price of the box
+    */
     @Override
     public double totalPrice(){
         double price = 0.0;
@@ -45,6 +62,10 @@ public class BoxOfCandy implements Box {
         return price;
     }
 
+    /**
+    *Get info about every piece of candy 
+    *in the box
+    */
     @Override
     public void information(){
         for (Sweets sweets : candy){
