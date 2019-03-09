@@ -49,7 +49,8 @@ public class BoxOfCandy implements Box {
  }
 
     /**
-    *Returns price of the box
+    *Returns total price of the 
+    *the present box
     */
     @Override
     public double totalPrice(){
