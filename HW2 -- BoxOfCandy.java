@@ -15,7 +15,8 @@ public class BoxOfCandy implements Box {
         candy = Arrays.copyOf(candy, candy.length + 1);
         candy[candy.length - 1] = sweets;
     }
-
+    
+//not working??
 //    @Override
 //    public Sweets get(int i) {
 //        return candy[i];
