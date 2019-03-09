@@ -4,35 +4,38 @@ import java.util.Arrays;
 
 public class BoxOfCandy implements Box {
 
-    BoxOfCandy box = new BoxOfCandy();
-    private Sweets pieces[];
+    private Sweets candy[];
 
 
     @Override
     public void gatherCandy(Sweets sweets) {
-
+        if (candy == null){
+            candy = new Sweets[0];
+        }
+        candy = Arrays.copyOf(candy, candy.length + 1);
+        candy[candy.length - 1] = sweets;
     }
 
-    @Override
-    public Sweets get(int i) {
-
-        return pieces[i];
-    }
+//    @Override
+//    public Sweets get(int i) {
+//        return candy[i];
+//    }
 
     @Override
     public double totalWeight(){
-        int weight = 0;
-        for (Sweets sweets : pieces){
+        double weight = 0.0;
+        for (Sweets sweets : candy){
             weight += sweets.getWeightInGrams();
 
         }
+        System.out.println(weight);
         return weight;
  }
 
     @Override
     public double totalPrice(){
-        int price = 0;
-        for (Sweets sweets : pieces){
+        double price = 0.0;
+        for (Sweets sweets : candy){
             price += sweets.getPricePerGram();
         }
         return price;
@@ -40,7 +43,7 @@ public class BoxOfCandy implements Box {
 
     @Override
     public void information(){
-        for (Sweets sweets : pieces){
+        for (Sweets sweets : candy){
             System.out.println( sweets.toString() );
         }
     }
