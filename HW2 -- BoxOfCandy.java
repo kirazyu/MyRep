@@ -38,6 +38,8 @@ public class BoxOfCandy implements Box {
         for (Sweets sweets : candy){
             price += sweets.getPricePerGram();
         }
+        
+        System.out.println(price);
         return price;
     }
 
