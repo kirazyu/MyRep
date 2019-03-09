@@ -11,6 +11,6 @@ public class Licorice extends Sweets {
     }
 
     public String toString() {
-        return super.toString() + "\nFilling:" + filling;
+        return super.toString() + "\nFilling:" + filling + "\n";
     }
 }
