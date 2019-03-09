@@ -18,7 +18,7 @@ public class Run {
         box.gatherCandy(sweets4);
 
 
-        sweets1.getWeightInGrams();
+//      sweets1.getWeightInGrams();
         box.information();
         box.totalPrice();
         box.totalWeight();
