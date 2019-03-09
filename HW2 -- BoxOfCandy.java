@@ -16,11 +16,12 @@ public class BoxOfCandy implements Box {
         candy[candy.length - 1] = sweets;
     }
     
-//not working??
-//    @Override
-//    public Sweets get(int i) {
-//        return candy[i];
-//    }
+
+      @Override
+    public Sweets specificInfo(int i) {
+        System.out.println("Element found by index " + i + " is: " + candy[i]);
+        return candy[i];
+    }
 
     @Override
     public double totalWeight(){
